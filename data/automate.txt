@@ -1,0 +1,13 @@
+E  = { A , B , C }
+EI = { A }
+EF = { C }
+
+Classes =
+ch = [0-9] ;
+
+Transitions =
+A -> '+' B ;
+A -> '-' B ;
+A -> 'ch' C ;
+B -> 'ch' C ;
+C -> 'ch' C ;
